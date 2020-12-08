@@ -1,23 +1,30 @@
 <template>
     <div>
-    <h1>{{title}}</h1>
-    
-    <ul>
-        <book-item v-for="book in books" :key="book.author" :book=book>{{book.title}}:{{book.author}}</book-item> 
-    </ul>
-   
+        
+        <h1>{{title}}</h1>
+        <ul  v-for="book in books" :key="book.author" :book=book>
+            <book-item>{{book.title}}:{{book.author}}</book-item> 
+        </ul> 
+        <book-form @addBook='appendBook'></book-form> 
     </div>    
 </template>
 
 
 <script>
 import BookItem from './BookItem';
-import BookItem from './components/BookItem';
+import BookForm from './BookForm'
+
 
 export default {
     name: "BookList",
     components: {
-        BookItem,
+        BookItem, BookForm,
+        
+    },
+    methods:{
+        appendBook(bookTitle, bookAuthor){
+            this.books.push({title: bookTitle, author: bookAuthor})
+        }
     },
     data(){
         return{
