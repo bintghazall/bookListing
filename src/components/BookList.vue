@@ -2,8 +2,11 @@
     <div>
         
         <h1>{{title}}</h1>
-        <ul  v-for="book in books" :key="book.author" :book=book>
-            <book-item>{{book.title}}:{{book.author}}</book-item> 
+        <ul  >
+            <book-item v-for="(book, index) in books" :key="index" :book=book>
+                Title: {{book.title}},
+                By: {{book.author}}
+            </book-item> 
         </ul> 
         <book-form @addBook='appendBook'></book-form> 
     </div>    
@@ -30,11 +33,11 @@ export default {
         return{
             title: "All Books",
             books: [
-                {Title: 'Self-Reliance', Author:'Ralph Waldo Emerson'},
-                {Title: 'American Gods', Author:'Niel Gaiman'},
-                {Title: 'Amusing Ourselves to Death', Author:'Niel Postman'},
-                {Title: 'Build interactive Applications: Autarky UI', Author:'Abdullah Isa-Bello Marufat'},
-                {Title: 'Softwares served On a platter', Author:'Abdullah Isa-Bello Marufat'},
+                {title: 'Self-Reliance', author:'Ralph Waldo Emerson'},
+                {title: 'American Gods', author:'Niel Gaiman'},
+                {title: 'Amusing Ourselves to Death', author:'Niel Postman'},
+                {title: 'Build interactive Applications: Autarky UI', author:'Abdullah Isa-Bello Marufat'},
+                {title: 'Softwares served On a platter', author:'Abdullah Isa-Bello Marufat'},
             ]
         }
     }
