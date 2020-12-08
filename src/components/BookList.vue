@@ -30,11 +30,11 @@ export default {
         return{
             title: "All Books",
             books: [
-                {title: 'Self-Reliance', author:'Ralph Waldo Emerson'},
-                {title: 'American Gods', author:'Niel Gaiman'},
-                {title: 'Amusing Ourselves to Death', author:'Niel Postman'},
-                {title: 'Build interactive Applications: Autarky UI', author:'Abdullah Isa-Bello Marufat'},
-                {title: 'Softwares served On a platter', author:'Abdullah Isa-Bello Marufat'},
+                {Title: 'Self-Reliance', Author:'Ralph Waldo Emerson'},
+                {Title: 'American Gods', Author:'Niel Gaiman'},
+                {Title: 'Amusing Ourselves to Death', Author:'Niel Postman'},
+                {Title: 'Build interactive Applications: Autarky UI', Author:'Abdullah Isa-Bello Marufat'},
+                {Title: 'Softwares served On a platter', Author:'Abdullah Isa-Bello Marufat'},
             ]
         }
     }
