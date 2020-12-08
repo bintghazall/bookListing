@@ -33,6 +33,8 @@ export default {
                 {title: 'Self-Reliance', author:'Ralph Waldo Emerson'},
                 {title: 'American Gods', author:'Niel Gaiman'},
                 {title: 'Amusing Ourselves to Death', author:'Niel Postman'},
+                {title: 'Build interactive Applications: Autarky UI', author:'Abdullah Isa-Bello Marufat'},
+                {title: 'Softwares served On a platter', author:'Abdullah Isa-Bello Marufat'},
             ]
         }
     }
