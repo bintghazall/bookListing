@@ -23,7 +23,8 @@ li{
         background-color: rgba(0, 0, 0, 0.158);
         background-size: 30% 30%;
         line-height: 1.6;
-        margin-top: 2px;        
+        margin: 1px 25%;   
+             
     }
 
 </style>
