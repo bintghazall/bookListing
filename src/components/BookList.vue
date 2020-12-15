@@ -8,7 +8,7 @@
                 By: {{book.author}}
             </book-item> 
         </ul> 
-        <book-form @addBook='appendBook'></book-form> 
+        <!--<book-form @addBook='appendBook'></book-form>-->
     </div>    
 </template>
 
@@ -28,6 +28,7 @@ export default {
         appendBook(bookTitle, bookAuthor){
             this.books.push({title: bookTitle, author: bookAuthor})
         }
+       
     },
     data(){
         return{

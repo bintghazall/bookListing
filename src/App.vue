@@ -1,17 +1,21 @@
 <template>
   <div id="app">
+    <app-header></app-header>
     <img src="./assets/logo.png">
-    <book-list> </book-list>
+    <router-view></router-view>
+    
   </div>
 </template>
 
 <script>
 import BookList from './components/BookList';
+import header from './components/header';
 
 export default {
   name: 'app',
   components: {
-    BookList,
+    BookList, 
+    'app-header': header
   },
 };
 </script>
